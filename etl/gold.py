@@ -21,8 +21,9 @@ COLUMNAS_CRITICAS = ["p_ac_kw", "irradiancia_wm2", "temp_modulo_c"]
 LECTURAS_POR_DIA = 24 * 12  # 288 lecturas de 5 minutos
 
 
-def build_engine():
-    """Crea el engine de SQLAlchemy a partir del .env del proyecto."""
+def construir_motor_base_datos():
+    """Crea la conexión con la base de datos a partir de nuestro
+    connection String, que une los datos de nuestras variables de entorno"""
     load_dotenv()
     url = (
         f"postgresql+psycopg2://{os.environ['PG_USER']}:{os.environ['PG_PASSWORD']}"
@@ -114,7 +115,7 @@ def contar(engine, tabla: str) -> int:
 
 
 def main() -> None:
-    engine = build_engine()
+    engine = construir_motor_base_datos()
     aplicar_schema(engine)
 
     df_silver = pd.read_csv(SILVER_CSV)
