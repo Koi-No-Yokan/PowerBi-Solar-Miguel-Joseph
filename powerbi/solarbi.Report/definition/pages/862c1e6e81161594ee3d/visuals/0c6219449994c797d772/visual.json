@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "0c6219449994c797d772",
+  "position": {
+    "x": 80.352422907488986,
+    "y": 74.7136563876652,
+    "z": 2001,
+    "height": 163.52422907488986,
+    "width": 608.98678414096923,
+    "tabOrder": 2001
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Reporte diario de energia producida",
+                    "textStyle": {
+                      "fontSize": "42pt"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

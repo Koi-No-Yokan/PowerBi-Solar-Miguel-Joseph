@@ -9,6 +9,15 @@
         "page": "2.3.1"
       },
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "SoftDark",
+      "reportVersionAtImport": {
+        "visual": "2.13.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
     }
   },
   "objects": {
@@ -48,6 +57,11 @@
           "name": "Fluent2-CY26SU09",
           "path": "BaseThemes/Fluent2-CY26SU09.json",
           "type": "BaseTheme"
+        },
+        {
+          "name": "SoftDark",
+          "path": "BuiltInThemes/SoftDark.json",
+          "type": "CustomTheme"
         }
       ]
     }
